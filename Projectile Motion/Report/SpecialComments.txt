@@ -1,0 +1,5 @@
+This is a program that works in the 1st quadrant and 4th quadrant, and has a stop condition if it will not hit the target.  
+
+Team of 2:
+-Andrew Gordon
+-Evan Roncevich

@@ -1,0 +1,26 @@
+%assignment 1 APPM 3050         Andrew Gordon
+
+x = eye(6000000,1); %will hold our e-values (for plotting purposes)
+err = eye(6000000,1); %will hold our error vals
+for n = 4000000:10000000
+    e = double(1+(1/n))^n;
+    x(n,1) = e;
+    y(n,1) = log10(e);
+    err(n,1) = 2.718281828459045 - e;
+    z(n,1) = log10(2.718281828459045 - e);
+    
+end
+
+plot(x)
+%plot(err)
+
+%10^.43 = 2.7
+%loglog(x)    
+%loglog(err)
+
+%simple code that calculates e using the assigned sequence
+%final value with 1000 iterations is 2.7169
+%final value with 10000 iterations is 2.7181
+%final value with 100000 iterations is 2.7182
+%with both n-values we clearly see error converging to 0 and e converging
+%to correct value of 2.718281828459045.......
